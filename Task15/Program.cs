@@ -1,7 +1,7 @@
 ﻿Console.Write ("Введите номер дня недели ");
-if (int.TryParse(Console.ReadLine(), out int day))
+if (int.TryParse(Console.ReadLine(), out int dayNumber))
 {
-    switch (day)
+    switch (dayNumber)
     {
         case 1:
             Console.WriteLine("Это будний день");
@@ -19,7 +19,7 @@ if (int.TryParse(Console.ReadLine(), out int day))
             Console.WriteLine("Это будний день"); 
             break;
         case 6:
-            Console.WriteLine("Это Это выходной день"); 
+            Console.WriteLine("Это выходной день"); 
             break;
         case 7:
             Console.WriteLine("Это выходной день");
