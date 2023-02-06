@@ -5,9 +5,9 @@ if (int.TryParse(Console.ReadLine(), out int EnteredNumber))
     if (EnteredNumber > 99 && EnteredNumber < 1000)
     {
         SavedNumber = EnteredNumber;
-        EnteredNumber = EnteredNumber%100;
-        EnteredNumber = EnteredNumber/10;
-        Console.WriteLine($"{EnteredNumber} вторая цифра в числе {SavedNumber}");
+        SavedNumber = SavedNumber%100;
+        SavedNumber = SavedNumber/10;
+        Console.WriteLine($"{SavedNumber} вторая цифра в числе {EnteredNumber}");
     }
     else
     {
