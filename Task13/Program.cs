@@ -4,7 +4,7 @@ if (int.TryParse(Console.ReadLine(), out int EnteredNumber))
     if (EnteredNumber > 99)
     {
         string SearchingNumber = EnteredNumber.ToString();
-        Console.WriteLine(SearchingNumber[2]);
+        Console.WriteLine($"{SearchingNumber[2]} - третья цифра в числе {EnteredNumber}");
     }
 
     else
